@@ -1,0 +1,113 @@
+
+
+.tweestar-package{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+    
+
+    img{
+        cursor: pointer;
+        background-color: grey;
+        width: 40%;
+        height: 400px;
+        margin-right: 50px;
+        border-radius: 20px;
+        border: 6px solid white;
+        box-shadow: 5px 5px 20px rgba(12, 12, 12, 0.637);
+        animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    .package-desc{
+        width: 50%;
+
+        h2{
+            margin-bottom: 20px;
+        }
+        h4{
+            margin-bottom: 0px;
+        }
+        p{
+            margin-top: 10px;
+            font-family: 'poppins', sans-serif;
+            line-height: 20px;
+        }
+    }
+
+    li{
+        color: rgb(240, 70, 4);
+        font-family: 'poppins', sans-serif;
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .buy-now{
+        padding: 10px 15px;
+        background-color: rgb(240, 70, 4);
+        border: none;
+        border-radius: 50px;
+        font-size: 16px;
+        color: white;
+        
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.678);
+        cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+    .buy-now:hover{
+            padding: 12px 17px;
+        }
+
+
+
+}
+@keyframes glow {
+    0%{
+        border: 6px solid white;
+    }
+    50%{
+        border: 6px solid rgb(240, 70, 4);
+    }
+    100%{
+        border: 6px solid rgb(253, 165, 0) ;
+    }
+}
+
+
+
+@media (max-width: 800px){
+    .tweestar-package{
+        flex-direction: column;
+
+
+        img{
+            width: 400px;
+            height: 300px;
+        }
+
+        .package-desc{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 450px){
+    .tweestar-package{
+        h2{
+            margin-top: 30px;
+            font-size: 2rem;
+        }
+        p{
+            font-size: 15px;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+    }
+}

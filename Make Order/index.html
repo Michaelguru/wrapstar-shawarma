@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Order - wrapstar</title>
+    <link rel="icon" href="../images/Wrapstar logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/touch-icon.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+
+
+    <div id="loginInputForUsername">
+        <div class="login-input">
+            <h2>Hello 👋 <span id="updateUsername"></span> </h2>
+            <h2>What Would you like us to call You?</h2>
+            <input type="text" id="usernameInput" placeholder="Enter your nickname" maxlength="20"  required onkeyup="updateName()">
+            <button onclick="submitUsernameBtn()">Submit</button>
+            <button class="popup-close" onclick="closePopUp()">×</button>
+        </div>
+    </div>
+
+    <section class="header">
+        <div class="order-list">
+        <a href="../" id="logo">
+            <img src="../images/Wrapstar logo.png">
+        </a>
+            <h1 id="Order-name"> What Would You Like To Order?</h1>
+            <p> Select your preferred option below:</p>
+            <!-- <a href="contest.html">Contest🏆🎁</a> -->
+            <a class="last-order-suggestion" id="makeLastOrderBtn" onclick="makeLastOrder()"> Make My Last Order ✨</a>
+            <a href="../Shawarma/"> Shawarma</a>
+            <a href="../Burger/"> Burger</a>
+            <a href="../Fries/"> Fries</a>
+            <a href="../Tweestar/"> Tweestar</a>
+            <a href="../Couples Combo/"> Couples Combo 👩🏾‍❤️‍💋‍👨🏽</a>
+            <a href="../" title="go back to home page?"> Go to Home</a>
+
+        </div>
+    </section>
+
+
+    <div id="lastOrderDisplay">
+        
+    </div>
+
+
+
+
+    <!-- <div id="lastOrderModal" class="modal-overlay">
+  <div class="modal-box">
+    <h2>Last Order Summary</h2>
+    <div id="lastOrderItems" class="order-items"></div>
+    <div class="modal-actions">
+      <button id="addToCartBtn">Add to Cart</button>
+      <button id="buyNowBtn">Buy Now</button>
+    </div>
+    <button class="modal-close" onclick="closeLastOrderModal()">×</button>
+  </div>
+</div> -->
+
+
+
+
+
+
+    <footer>
+        <h3>GET IN TOUCH</h3>
+
+        <div class="footer-container">
+            <div class="footer-logo-text">
+                <img src="../images/Wrapstar logo.png" alt="wrapstar logo">
+                <div>A Taste You Can Trust</div>
+                <p>For inquiries, orders, or feedback, reach out to us via</p>
+            </div>
+
+            <div class="footer-menu">
+                <h3>OUR MENU</h3>
+                <ul>
+                    <li><a href="../Shawarma/">Shawarma</a></li>
+                    <li><a href="../Burger/">Burger</a></li>
+                    <li><a href="../Fries/">Fries</a></li>
+                    <li><a href="../Tweestar/">Tweestar</a></li>
+                    <li><a href="../Couples Combo/">Couples Package</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="tel:+2349157684983">+234 915 768 4983</a></li>
+                    <li><a href="mailto:Wrapstarhub@gmail.com"> Send Email</a> </li>
+                    <li>Kwasu, malete Ilorin, Nigeria</li>
+                    <li>Opening Hours: Monday to Sunday - 12pm - 10pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-useful-links">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../Abous Us">About Us</a></li>
+                    <li><a href="../Blog/">Blog</a></li>
+                    <li><a href="./">Make Order</a></li>
+                    <li><a href="../Cart/">Your Order</a></li>
+                    <li><a href="../About Us#P&P"> Privacy & Policies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright"> 
+                &copy; 2025 Wrapstar. All rights reserved. <br>
+                Designed & developed by <strong> <a href="https://michaelguru.github.io/ScottView" target="_blank">ScottView</a></strong>
+            </p>
+
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
