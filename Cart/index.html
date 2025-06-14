@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - wrapstar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../images/Wrapstar logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/touch-icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="prof-container">
+        <div class="rev-prof">
+            <div class="prof1"></div>
+            <div class="prof2"></div>
+            
+        </div>
+        <div id="lastOrderDisplay"></div>
+    </div>
+
+
+    <div id="cart-items">
+      
+    </div>
+
+    
+
+
+    <div id="span">
+      <p>Visit the <a href= "../Make Order"> Make Order</a> to place your orders.</p>
+      <img src="../images/empty cart.jpg" alt="cart image">
+    </div>
+
+
+    
+
+    <div class="line"></div>
+
+    <label class="delivery-checkbox">
+    <!-- This checkbox is for the delivery option -->
+    <input type="checkbox" id="OrderForDeliveryCheckbox">
+    Order for Delivery
+  </label>
+</div>
+<div class="order-details">
+    <h3>Order Details</h3>
+    <div class="order-detail">
+      <label for="name">Name: <span>*</span></label>
+      <input type="text" id="name" required placeholder="John Doe">
+    </div>
+    <div class="order-detail">
+      <label for="phone">Phone Number:<span>*</span></label>
+      <input type="number" id="phone" required placeholder="08123456789">
+    </div>
+    <div class="order-detail">
+      <label for="state">State:<span>*</span></label>
+      <input type="state" id="state" required placeholder="Kwara State">
+      
+      <label for="Community">Community <span>*</span></label>
+        <input type="address" id="Community" required placeholder="Malete">
+
+        <label for="house-address"> Enter your house number and street name <span>*</span></label>
+        <input type="address" id="house-address" required placeholder="02, Your street, your Bus Stop">
+    </div>
+
+    <!-- <div class="order-detail">
+      <label for="special-instructions">Special Instructions:</label>
+      <textarea id="special-instructions" placeholder="Any special instructions"></textarea>
+    </div> -->
+
+    <p>Please follow the placeholder on the input box. Deliveries are only made within Malete, Kwara State! for just ₦600</p>
+    <div class="line"></div>
+</div>
+
+    
+    <p id="delivery-fee">Delivery Fee: ₦0</p> 
+    <!-- This should add an extra fee of 600 to the total -->
+    <h3 id="total">Total: ₦0</h3>
+    
+    <div>
+  <label>
+    <input type="checkbox" id="saveOrderCheckbox" checked>
+    Save My Last Order for when next i come. This only saves your last order
+  </label>
+  
+
+    <button onclick="submitOrder()" class="send-order">Send Order</button>
+
+  <p>Orders a made only on Wrapstar's Official whatsapp account (which the website will redirect you to). If you're having issues with your orders, kindly <a href="mailto:wrapstarhub@gmail.com?subject=I%20have%20Issues%20Regarding%20My%20Order"> Reach out to our management.</a></p>
+
+    
+
+
+
+  <footer>
+        <h3>GET IN TOUCH</h3>
+
+        <div class="footer-container">
+            <div class="footer-logo-text">
+                <img src="../images/Wrapstar logo.png" alt="wrapstar logo">
+                <div>A Taste You Can Trust</div>
+                <p>For inquiries, orders, or feedback, reach out to us via</p>
+            </div>
+
+            <div class="footer-menu">
+                <h3>OUR MENU</h3>
+                <ul>
+                    <li><a href="../Shawarma/">Shawarma</a></li>
+                    <li><a href="./">Burger</a></li>
+                    <li><a href="../Fries/">Fries</a></li>
+                    <li><a href="../Tweestar/">Tweestar</a></li>
+                    <li><a href="../Couples Combo/">Couples Package</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="tel:+2349157684983">+234 915 768 4983</a></li>
+                    <li><a href="mailto:Wrapstarhub@gmail.com"> Send Email</a> </li>
+                    <li>Kwasu, malete Ilorin, Nigeria</li>
+                    <li>Opening Hours: Monday to Sunday - 12pm - 10pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-useful-links">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../Abous Us">About Us</a></li>
+                    <li><a href="../Blog/">Blog</a></li>
+                    <li><a href="../Make Order/">Make Order</a></li>
+                    <li><a href="../Cart/">Your Order</a></li>
+                    <li><a href="../About Us#P&P"> Privacy & Policies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright"> 
+            &copy; 2025 Wrapstar. All rights reserved. <br>
+            Designed & developed by <strong> <a href="https://michaelguru.github.io/ScottView" target="_blank">ScottView</a></strong>
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

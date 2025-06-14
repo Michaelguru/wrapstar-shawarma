@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger - wrapstar</title>
+    <link rel="stylesheet" href="../general-styles.css">
+    <link rel="icon" href="../images/Wrapstar logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="../images/touch-icon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../"><img src="../images/Wrapstar logo.png" alt="logo"></a>
+            </div>
+            <ul class="navigations">
+                <li><a href="../">Home</a></li>
+                <li><a href="../About Us">About</a></li>
+                <li><a href="../Blog/">Blog</a></li>
+                <li class="menu-nav"><a href="../Make Order/">Menu</a> <span class="span">+</span>
+                
+                <div class="drop-down-nav">
+                    <ul>
+                        <li><a href="../Shawarma/">Shawarma</a></li>
+                        <li><a href="./">Burger</a></li>
+                        <li><a href="../Fries/">Fries</a></li>
+                        <li><a href="../Tweestar/">Tweestar</a></li>
+                    </ul>
+                </div></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="cart">
+                <li><a href="../Cart/">Your Order <div class="sign"></div></a></li>
+                <div class="cart-icon">
+                    <a href="../Cart/">  <img src="../images/cart image.png" alt="cart"> <div id="sign" title="Item is in cart"></div></a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <img src="../images/image.png" alt="shawarma bg image">
+    </section>
+
+    <section class="shawarma-list-cont">
+        <div class="line"></div>
+        <h2>Burger</h2>
+
+
+        <div class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search in Burger..." id="search" onkeyup="searchRelatedItem()">
+        </div>
+
+
+
+
+
+        <div class="list-container">
+
+
+            <div class="item-container">
+                <div class="item-img">
+                    <div class="item-box">
+                        <img src="../images/IMG_2116.png" alt="Burger image">
+                    </div>
+                </div>
+
+                <div class="item-text">
+                    <p class="itemName">Single Chicken Burger <button class="descriptionDisplay" onclick="descriptionDisplay()"> ! </button></p>
+                    <p class="item-price">₦3,500</p>
+                    
+                    <p class="description" style="display: none;" id="item1"> Delicious and tasty burger topped with a crispy chicken!</p>
+                    <div class="item-btn">
+                        <button class="buy-now" onclick="BuyNow('Single Chicken Burger', 3500, '../images/IMG_2116.png')"> Buy Now</button>
+                        <button class="add-to-cart" onclick="addToCart('Single Chicken Burger', 3500, '../images/IMG_2116.png')"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="item-container">
+                <div class="item-img">
+                    <div class="item-box">
+                        <img src="../images/IMG_2118.png" alt="shawarma image">
+                    </div>
+                </div>
+
+                <div class="item-text">
+                    <p class="itemName">Double Chicken Burger <button class="descriptionDisplay" onclick="descriptionDisplay2()"> ! </button></p>
+                    <p class="item-price">₦4,000</p>
+                    <p class="description" style="display: none;" id="item2">Delicious and juicy double chicken burger packed with extra flavor and crunch!</p>
+                    <div class="item-btn">
+                        <button class="buy-now" onclick="BuyNow('Double Chicken Burger', 4000, '../images/IMG_2118.png')"> Buy Now</button>
+                        <button class="add-to-cart" onclick="addToCart('Double Chicken Burger', 4000, '../images/IMG_2118.png')"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="item-container">
+                <div class="item-img">
+                    <div class="item-box">
+                        <img src="../images/IMG_2113.png" alt="shawarma image">
+                    </div>
+                </div>
+
+                <div class="item-text">
+                    <p class="itemName">Single Beef Burger <button class="descriptionDisplay" onclick="descriptionDisplay3()"> ! </button></p>
+                    <p class="item-price">₦3,000</p>
+                    
+                    <p class="description" style="display: none;" id="item3">Savory single beef burger seasoned to perfection and wrapped with fresh veggies!</p>
+                    <div class="item-btn">
+                        <button class="buy-now" onclick="BuyNow('Single Beef Burger', 3000, '../images/IMG_2113.png')"> Buy Now</button>
+                        <button class="add-to-cart" onclick="addToCart('Single Beef Burger', 3000, '../images/IMG_2113.png')"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="item-container">
+                <div class="item-img">
+                    <div class="item-box">
+                        <img src="../images/IMG_2114.JPG" alt="shawarma image">
+                    </div>
+                </div>
+
+                <div class="item-text">
+                    <p class="itemName">Double Beef Burger <button class="descriptionDisplay" onclick="descriptionDisplay4()" > ! </button></p>
+                    <p class="item-price">₦3,500</p>
+                    <p class="description" style="display: none;" id="item4">Double-layered beef burger loaded with bold flavors and mouthwatering goodness!</p>
+                    <div class="item-btn">
+                        <button class="buy-now" onclick="BuyNow('Double Beef Burger', 3500, '../images/IMG_2114.JPG')"> Buy Now</button>
+                        <button class="add-to-cart" onclick="addToCart('Double Beef Burger', 3500, '../images/IMG_2114.JPG')"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="item-container">
+                <div class="item-img">
+                    <div class="item-box">
+                        <img src="../images/IMG_2115.png" alt="shawarma image">
+                    </div>
+                </div>
+
+                <div class="item-text">
+                    <p class="itemName">Beef Suya Burger <button class="descriptionDisplay" onclick="descriptionDisplay5()"> ! </button></p>
+                    <p class="item-price">₦3,500</p>
+                    
+                    <p class="description" style="display: none;" id="item5"> Spicy and tender beef suya burger infused with traditional Nigerian spices! </p>
+                    <div class="item-btn">
+                        <button class="buy-now" onclick="BuyNow('Beef Suya Burger', 3500, '../images/IMG_2115.png')"> Buy Now</button>
+                        <button class="add-to-cart" onclick="addToCart('Beef Suya Burger', 3500, '../images/IMG_2115.png')"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    
+    <p class="added-to-cart-notification" id="cartNotification"></p>
+        
+    <div class="no-result-found" id="noresultFound">
+        <p >Can't find result for your search? Try checking your spelling or search for a different item.</p>
+    </div>
+
+
+
+
+    <footer>
+        <h3>GET IN TOUCH</h3>
+
+        <div class="footer-container">
+            <div class="footer-logo-text">
+                <img src="../images/Wrapstar logo.png" alt="wrapstar logo">
+                <div>A Taste You Can Trust</div>
+                <p>For inquiries, orders, or feedback, reach out to us via</p>
+            </div>
+
+            <div class="footer-menu">
+                <h3>OUR MENU</h3>
+                <ul>
+                    <li><a href="../Shawarma/">Shawarma</a></li>
+                    <li><a href="./">Burger</a></li>
+                    <li><a href="../Fries/">Fries</a></li>
+                    <li><a href="../Tweestar/">Tweestar</a></li>
+                    <li><a href="../Couples Combo/">Couples Package</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li><a href="tel:+2349157684983">+234 915 768 4983</a></li>
+                    <li><a href="mailto:Wrapstarhub@gmail.com"> Send Email</a> </li>
+                    <li>Kwasu, malete Ilorin, Nigeria</li>
+                    <li>Opening Hours: Monday to Sunday - 12pm - 10pm</li>
+                </ul>
+            </div>
+
+            <div class="footer-useful-links">
+                <h3>USEFUL LINKS</h3>
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../About Us">About Us</a></li>
+                    <li><a href="../Blog/">Blog</a></li>
+                    <li><a href="../Make Order/">Make Order</a></li>
+                    <li><a href="../Cart/">Your Order</a></li>
+                    <li><a href="../About Us#P&P"> Privacy & Policies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright"> 
+            &copy; 2025 Wrapstar. All rights reserved. <br>
+            Designed & developed by <strong> <a href="https://michaelguru.github.io/ScottView" target="_blank">ScottView</a></strong>
+        </p>
+
+    </footer>
+
+
+
+    </section>
+
+
+
+    
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
