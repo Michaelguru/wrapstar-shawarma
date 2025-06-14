@@ -18,9 +18,20 @@ function submitUsernameBtn(){
         document.getElementById("loginInputForUsername").style.display = "none";
         window.location.href = './';
     } else {
+        document.getElementById("loginInputForUsername").style.display = "block";
         alert("Please enter a valid username (at least 3 characters).");
     }
 }
+
+window.addEventListener("load", function() {
+    const savedUsername = localStorage.getItem("Username");
+    if (savedUsername) {
+        document.getElementById("updateUsername").textContent = savedUsername;
+    } else {
+        document.getElementById("loginInputForUsername").style.display = "block";
+    }
+})
+
 function editUsername(){
     document.getElementById("loginInputForUsername").style.display = "block";
 }

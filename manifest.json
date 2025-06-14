@@ -1,0 +1,42 @@
+{
+    "name": "Wrapstar Shawarma",
+    "short_name": "Wrapstar",
+    "start_url": "Make%20Order",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#1da1f2",
+    "background_color": "#ffffff",
+    "description": "Wrapstar Shawarma is a food delivery app that allows you to order delicious shawarma and other meals from your their restaurants.",
+    "orientation": "portrait",
+    "lang": "en-US",
+    "icons": [
+      {
+        "src": "/images/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/images/mobile-screenshot.png",
+        "sizes": "538x631",
+        "type": "image/jpeg",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/images/windows screenshot img5.png",
+        "sizes": "1346x625",
+        "type": "image/png",
+        "form_factor": "wide"
+      }
+    ],
+    "display_override": [
+      "window-controls-overlay"
+    ]
+  }
+  

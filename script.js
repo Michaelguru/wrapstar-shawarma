@@ -58,25 +58,25 @@ function updateName(){
     }
 }
 
-function submitUsernameBtn(){
-    const usernameInput = document.getElementById("usernameInput").value.toLowerCase().trim();
-    if (usernameInput.length > 2) {
-        localStorage.setItem("Username", usernameInput);
-        updateName();
-        document.getElementById("loginInputForUsername").style.display = "none";
-    } else {
-        alert("Please enter a valid username (at least 3 characters).");
-    }
-}
+// function submitUsernameBtn(){
+//     const usernameInput = document.getElementById("usernameInput").value.toLowerCase().trim();
+//     if (usernameInput.length > 2) {
+//         localStorage.setItem("Username", usernameInput);
+//         updateName();
+//         document.getElementById("loginInputForUsername").style.display = "none";
+//     } else {
+//         alert("Please enter a valid username (at least 3 characters).");
+//     }
+// }
 
-window.addEventListener("load", function() {
-    const savedUsername = localStorage.getItem("Username");
-    if (savedUsername) {
-        document.getElementById("updateUsername").textContent = savedUsername;
-    } else {
-        document.getElementById("loginInputForUsername").style.display = "block";
-    }
-})
+// window.addEventListener("load", function() {
+//     const savedUsername = localStorage.getItem("Username");
+//     if (savedUsername) {
+//         document.getElementById("updateUsername").textContent = savedUsername;
+//     } else {
+//         document.getElementById("loginInputForUsername").style.display = "block";
+//     }
+// })
 
 const ExistingItemInCart = JSON.parse(localStorage.getItem("cart")) || [];
 const cartMessage = document.getElementById("sign");

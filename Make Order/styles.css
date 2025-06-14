@@ -93,7 +93,7 @@ a:hover{
 }
 
 .header{
-    background: linear-gradient(rgba(218, 116, 0, 0.733), #723d01);
+    background: linear-gradient(#da7400bb, #723d01);
     background-size: cover;
     background-position: center;
     padding: 40px;
